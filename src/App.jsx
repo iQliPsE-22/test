@@ -27,12 +27,12 @@ const App = () => {
     <div>
       <input
         type="text"
-        className="bg-gray-200 p-4 rounded w-full text-center p-2focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-        placeholder="Search"
+        className="bg-white p-3 rounded-lg w-full text-center md:w-1/2 mx-auto lg:w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Search Beers"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <div className="grid grid-cols-3 bg-black text-white place-items-center">
+      <div className="grid grid-cols-3 bg-gray-500 text-white place-items-center">
         {filteredData.map((item, key) => (
           <Card
             key={key}
